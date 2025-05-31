@@ -3,15 +3,15 @@ package AgendaContatos;
 public class Contato {
 
     private String nomes;
-    private int telefones;
+    private String telefones;
 
-    public Contato(String nomes, int telefones) {
+    public Contato(String nomes, String telefones) {
 
         this.nomes = nomes;
         this.telefones = telefones;
     }
 
-    public int getTelefones() {
+    public String getTelefones() {
         return telefones;
     }
 

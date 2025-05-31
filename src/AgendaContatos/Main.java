@@ -26,16 +26,19 @@ public class Main {
                     String perguntaNome = in.nextLine();
 
                     System.out.println("Digite um numero de Telefone: ");
-                    int perguntaTel = in.nextInt();
+                    String perguntaTel = in.nextLine();
 
-                    contato.add(new Contato(perguntaNome,perguntaTel));
+                    contato.add(new Contato(perguntaNome, perguntaTel));
 
                     break;
                 }
                 case 2 : {
 
                     System.out.println("selecione um contato para apagar.");
-                    System.out.println(contato);
+                    for (int i = 0; i < contato.size(); i++){
+
+                        System.out.println((i + 1) +"-"+ contato.get(i));
+                    }
                     System.out.println("Selecione um contato com numero");
                     int remover = in.nextInt();
                     contato.remove(remover - 1);
